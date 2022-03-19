@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv1_test"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="100dp"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/black"
+                android:layout_height="300dp"/>
+
+            <TextView
+                android:id="@+id/tv1_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="책 이름 : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv2_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="저자 명 : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv3_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="출판사 : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv4_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ISBN : "
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="책을 검색해주세요!"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="검색"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
